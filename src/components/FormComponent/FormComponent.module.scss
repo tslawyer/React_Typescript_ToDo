@@ -13,34 +13,35 @@
     margin: 0 0 30px;
     color: #fff;
     text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
   }
 }
 
 .user_box {
   position: relative;
-}
-
-.user_box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: white;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid white;
-  outline: none;
-  background: transparent;
-}
-
-.user_box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: white;
-  pointer-events: none;
-  transition: 0.5s;
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+    font-family: "Fredoka", sans-serif;
+  }
 }
 
 .user_box input:focus ~ label,
@@ -57,6 +58,7 @@ button {
   border: 1px solid #03e9f4;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Fredoka", sans-serif;
 }
 
 button:hover {
