@@ -10,10 +10,14 @@ const TaskContainer = ({ todo }: Props) => {
   return (
     <div className={scss.task_container}>
       <h2>Your tasks</h2>
-      <div className={scss.list_container}>
-        {todo.map((task) => {
-          return <TaskComponent key={task.id} task={task} />;
-        })}
+      <div
+        className={`${scss.list_container} ${todo.length === 0 ? scss.empty : ""}`}
+      >
+        {todo.length > 0 ? (
+          todo.map((task) => <TaskComponent key={task.id} task={task} />)
+        ) : (
+          <h3>No task added yet</h3>
+        )}
       </div>
     </div>
   );

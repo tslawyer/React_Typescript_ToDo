@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0 auto;
   h2 {
-    background-color: #121212;
     color: white;
     font-family: "Lexend", sans-serif;
     text-align: center;
@@ -22,4 +21,16 @@
   padding: 20px;
   background-color: #121212;
   box-sizing: border-box;
+
+  &.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h3 {
+  color: white;
+  font-family: "Lexend", sans-serif;
+  text-align: center;
 }
