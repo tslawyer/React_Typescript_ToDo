@@ -9,9 +9,12 @@ interface Props {
 const TaskContainer = ({ todo }: Props) => {
   return (
     <div className={scss.task_container}>
-      {todo.map((task) => {
-        return <TaskComponent key={task.id} task={task} />;
-      })}
+      <h2>Your tasks</h2>
+      <div className={scss.list_container}>
+        {todo.map((task) => {
+          return <TaskComponent key={task.id} task={task} />;
+        })}
+      </div>
     </div>
   );
 };
